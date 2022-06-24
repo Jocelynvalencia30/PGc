@@ -23,9 +23,9 @@ describe('AppComponent', () => {
   });
 
   it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
+    const fixture = TestBedcreateComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('prueba app is running!');
+    expect(compiledquerySelector('.content span').textContent).toContain('prueba app is running!');
   });
 });
