@@ -3,7 +3,7 @@ import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
-    await TestBed.configureTestingModule({
+    await TestBed.configure.Testing.Module({
       declarations: [
         AppComponent
       ],
@@ -23,9 +23,9 @@ describe('AppComponent', () => {
   });
 
   it('should render title', () => {
-    const fixture = TestBedcreateComponent(AppComponent);
+    const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiledquerySelector('.content span').textContent).toContain('prueba app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('prueba app is running!');
   });
 });
